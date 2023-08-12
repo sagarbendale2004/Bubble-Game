@@ -29,7 +29,7 @@ body {
 }
 
 .game-top {
-    height: 70px;
+    height: 75px;
     width: 100%;
     background-color: rgb(128 84 133);
     display: flex;
@@ -82,7 +82,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: 45px;
     width: 45px;
     background-color: rgb(139 121 139);
     color: #fff;
