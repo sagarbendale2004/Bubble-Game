@@ -1,4 +1,4 @@
-var countdown = 6;
+var countdown = 60;
 var score = 0;
 var hitrn;
 
