@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dadab6;
+}
+
+.game {
+    height: 75%;
+    width: 75%;
+    border-radius: 10px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.game-top {
+    height: 75px;
+    width: 100%;
+    background-color: rgb(128 84 133);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32%;
+}
+
+.elem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #fff;
+}
+
+.elem h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.elem .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 42px;
+    background-color: #fff;
+    color: rgb(37, 82, 37);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.game-bottom {
+    height: calc(100% - 75px);
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(87, 46, 87);
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background-color: rgb(139 121 139);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.bubble:hover {
+    background-color: rgb(89, 26, 89);
+}
+
+@media (max-width: 425px) {
+    .game {
+        height: 85%;
+        width: 85%;
+    }
+
+    .game-top {
+        height: 80px;
+        width: 100%;
+        padding: 0 3%;
+    }
+
+    .elem {
+        gap: 6px;
+    }
+
+    .elem h2 {
+        font-size: 17px;
+        font-weight: 700;
+    }
+
+    .box {
+        height: 30px;
+        width: 35px;
+    }
+}
