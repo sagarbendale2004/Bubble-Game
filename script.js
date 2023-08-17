@@ -2,6 +2,11 @@ var countdown = 60;
 var score = 0;
 var hitrn;
 
+var a = document.createElement("h1");
+a.innerText = "The Bubble Game";
+a.setAttribute("class","title");
+document.body.appendChild(a);
+
 function makebubbles() {
     var gets = "";
     for (var i = 1; i < 177; i++) {
@@ -43,7 +48,6 @@ document.querySelector(".game-bottom").addEventListener("click", function (detai
         hit();
     }
 });
-
 
 makebubbles();
 timer();
